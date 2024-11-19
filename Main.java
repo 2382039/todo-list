@@ -9,7 +9,7 @@ import views.TodoListView;
 public class Main {
     public static void main(String[] args) {
 
-        Database database = new Database("todo_si", "root", "", "localhost", "3306");
+        Database database = new Database("databaseku", "root", "", "localhost", "3306");
         database.setup();
 
         TodoListRepository todoListRepository = new TodoListRepositoryDbImpl(database);
